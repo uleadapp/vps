@@ -79,7 +79,7 @@ Login to your newly installed node as "root".
 Clone this git repository first:
 
 ```
-git clone https://github.com/masternodes/vps.git && cd vps
+git clone https://github.com/uleadapp/vps.git && cd vps
 ```
 
 
@@ -113,7 +113,7 @@ The generated configuration files are located at /etc/masternodes/. One file per
 
 ## Insert your masternode private key
 
-In 99% you can use the generated settings as is. The only value you MUST change is the masternode private key, generated in your controller wallet. Contact the individual crypto community if unsure, although the steps are identical for most master node coins. Check the [Dash documentation for example](https://dashpay.atlassian.net/wiki/spaces/DOC/pages/1867877/Start+multiple+masternodes+from+one+wallet+start-many).
+In 99% you can use the generated settings as is. The only value you MUST change is the masternode private key, generated in your controller wallet. Contact the individual crypto community if unsure, although the steps are identical for most master node coins.
 
 <img src="images/masternode_vps/insert-your-masternode-private-key.png" alt="the master node private key" class="inline"/>
 
@@ -191,6 +191,4 @@ If you want to check the status of your masternode, the best way is currently ru
 
 Please open github issue in case of questions or issues. I might not be able to reply immediately, but i do usually within a couple of days at worst.
 
-If my scripts work for you, please send some crypto my way here:
-
-**Have fun, this is crypto after all!**
+**Have fun, ULEADer!**
