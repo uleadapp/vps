@@ -10,7 +10,7 @@ Please also see the [README for this project](../README.md) that will give you a
 
 ## Intro
 
-This project started as handy bash script to setup my $ulead masternodes in 2018 when there was almost zero documentation and anything that existed was either $ulead specific, sucked and in most cases both. For that reason, i started to work on a not-so-sucking way to install a lot of different masternodes with next to none manual intervention.
+This project started as handy bash script to setup my $ulead masternodes in 2019 when there was almost zero documentation and anything that existed was either $ulead specific, sucked and in most cases both. For that reason, we started to work on a not-so-sucking way to install a lot of different masternodes with next to none manual intervention.
 
 <img src="images/masternode_vps/intro.png" alt="introduction" class="inline"/>
 
@@ -85,13 +85,13 @@ git clone https://github.com/masternodes/vps.git && cd vps
 
 ## Install the desired masternode and amount
 
-Use the *./install.sh* script with the desired crypto and masternode count as parameters, e.g. to install 4 PIVX masternodes:
+Use the *./install.sh* script with the desired crypto and masternode count as parameters, e.g. to install 5 ULEAD masternodes:
 
 ```
 ./install.sh -p ulead -c 5
 ```
 
-The script downloads, compiles and configures the system now. This will usually take between 5-15 minutes.
+The script downloads, compiles and configures the system now. This will usually take between 20-25 minutes.
 
 <img src="images/masternode_vps/install-the-desired-masternode-and-amount.png" alt="VPS sizing" class="inline"/>
 
