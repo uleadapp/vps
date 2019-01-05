@@ -10,9 +10,7 @@ Please also see the [README for this project](../README.md) that will give you a
 
 ## Intro
 
-This project started as handy bash script to setup my $PIVX masternodes in 2016 when there was almost zero documentation and anything that existed was either $DASH specific, sucked and in most cases both. For that reason, i started to work on a not-so-sucking way to install a lot of different masternodes with next to none manual intervention.
-
-If you are not already aware, visit the project site and join the slack. The website at [https://pivx.org/](https://pivx.org/) is also well worth a visit. 
+This project started as handy bash script to setup my $ulead masternodes in 2018 when there was almost zero documentation and anything that existed was either $ulead specific, sucked and in most cases both. For that reason, i started to work on a not-so-sucking way to install a lot of different masternodes with next to none manual intervention.
 
 <img src="images/masternode_vps/intro.png" alt="introduction" class="inline"/>
 
@@ -90,7 +88,7 @@ git clone https://github.com/masternodes/vps.git && cd vps
 Use the *./install.sh* script with the desired crypto and masternode count as parameters, e.g. to install 4 PIVX masternodes:
 
 ```
-./install.sh -p pivx -c 4
+./install.sh -p ulead -c 5
 ```
 
 The script downloads, compiles and configures the system now. This will usually take between 5-15 minutes.
@@ -124,7 +122,7 @@ In 99% you can use the generated settings as is. The only value you MUST change 
 
 A script to enable masternode start at boot has been created at */usr/local/bin/activate_masternodes_${CODENAME}.sh* for your convenience. There is exactly one script per installed masternode crypto.
 
-Run it after you finished configuration, e.g. after a PIVX installation do.
+Run it after you finished configuration, e.g. after a ulead installation do.
 
 ```
 /usr/local/bin/activate_masternodes_ulead
