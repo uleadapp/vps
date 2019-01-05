@@ -127,18 +127,20 @@ A script to enable masternode start at boot has been created at */usr/local/bin/
 Run it after you finished configuration, e.g. after a PIVX installation do.
 
 ```
-/usr/local/bin/activate_masternodes_pivx
+/usr/local/bin/activate_masternodes_ulead
 ```     
 
 ## Last step, the controller
 
 To activate the new nodes in your _local_ (not the VPS) controller wallet, add the bind address entries with port to a file called "masternode.conf" as usual.
 
-     MN1 [2002:470:1111:1a4:51]:51472 KEY TX OUTPUT
-     MN2 [2003:470:1111:1a4:52]:51472 KEY TX OUTPUT
-     MN3 [2003:470:1111:1a4:53]:51472 KEY TX OUTPUT
-
-To make this a bit easier for large installations, i implemented a small gimmick in the newest version. Now after the script has run, a partial of the "masternode.conf" file is generated and placed on the VPS eg for XIOS at "/tmp/pivx_masternode.conf"
+     uleadMN1 [2001:19f0:7401:8e1a:2044::1]:11788 KEY TX OUTPUT
+     uleadMN2 [2001:19f0:7401:8e1a:2044::2]:11788 KEY TX OUTPUT
+     uleadMN3 [2001:19f0:7401:8e1a:2044::3]:11788 KEY TX OUTPUT
+     uleadMN4 [2001:19f0:7401:8e1a:2044::4]:11788 KEY TX OUTPUT
+     uleadMN5 [2001:19f0:7401:8e1a:2044::5]:11788 KEY TX OUTPUT
+     
+To make this a bit easier for large installations, i implemented a small gimmick in the newest version. Now after the script has run, a partial of the "masternode.conf" file is generated and placed on the VPS eg for XIOS at "/tmp/ulead_masternode.conf"
 
 So you can take the contents from there and paste it into your local controller-wallets masternode.conf all that you need to add is the relevant pieces from "masternode outputs"
 
@@ -151,24 +153,37 @@ You get the idea, another step to a fully automated setup... ;-)
 If you want to check the status of your masternode, the best way is currently running the cli e.g. via
 
 ```
-/usr/local/bin/mue-cli -conf=/etc/masternodes/mue_n1.conf getinfo
+ /usr/local/bin/ulead-cli -conf=/etc/masternodes/ulead_n1.conf getinfo
 
 {
-  "version": 1000302,
-  "protocolversion": 70701,
+  "version": 1050000,
+  "protocolversion": 70005,
   "walletversion": 61000,
   "balance": 0.00000000,
-  "privatesend_balance": 0.00000000,
-  "blocks": 209481,
+  "zerocoinbalance": 0.00000000,
+  "blocks": 20127,
   "timeoffset": 0,
-  "connections": 5,
+  "connections": 23,
   "proxy": "",
-  "difficulty": 42882.54964804553,
+  "difficulty": 25214301.94376921,
   "testnet": false,
-  "keypoololdest": 1511380627,
+  "moneysupply": 2557535582.83194416,
+  "zULEADsupply": {
+    "1": 0.00000000,
+    "5": 0.00000000,
+    "10": 0.00000000,
+    "50": 0.00000000,
+    "100": 0.00000000,
+    "500": 0.00000000,
+    "1000": 0.00000000,
+    "5000": 0.00000000,
+    "total": 0.00000000
+  },
+  "keypoololdest": 1545510413,
   "keypoolsize": 1001,
   "paytxfee": 0.00000000,
   "relayfee": 0.00010000,
+  "staking status": "Staking Not Active",
   "errors": ""
 }
 ```
@@ -181,15 +196,3 @@ Please open github issue in case of questions or issues. I might not be able to 
 If my scripts work for you, please send some crypto my way here:
 
 **Have fun, this is crypto after all!**
-
-    onate here:
-
-<a href="https://gitcoin.co/tip/send/2/">
-    <img src='https://gitcoin.co/static/v2/images/promo_buttons/slice_01.png' width=267px height=52px />
-</a>
-
-or send BTC to:
-
-```
-BTC  33ENWZ9RCYBG7nv6ac8KxBUSuQX64Hx3x3
-```
