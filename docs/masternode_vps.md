@@ -1,16 +1,9 @@
-# Slick masternode VPS setup for all your beloved crypto masternodes (Vultr example)
+# One lick masternode VPS setup for all our beloved ULEAD community members (Vultr example)
 
-
----
-**PLEASE ALSO READ THE README**
-
-Please also see the [README for this project](../README.md) that will give you a high-level overview of features. 
-
----
 
 ## Intro
 
-This project started as handy bash script to setup my $ulead masternodes in 2019 when there was almost zero documentation and anything that existed was either $ulead specific, sucked and in most cases both. For that reason, we started to work on a not-so-sucking way to install a lot of different masternodes with next to none manual intervention.
+This project is a handy bash script to setup number of ulead masternodes at a time just on one VPS of type ipv6. Almost all of the steps are automated and no manual intervention is required during this process. You can use this script to setup either single masternode or multiple master nodes. Based on the 'number' passed as parameter in the initial step of process, master nodes are set up.
 
 <img src="images/masternode_vps/intro.png" alt="introduction" class="inline"/>
 
@@ -120,7 +113,7 @@ In 99% you can use the generated settings as is. The only value you MUST change 
 
 ## Start your new masternodes
 
-A script to enable masternode start at boot has been created at */usr/local/bin/activate_masternodes_${CODENAME}.sh* for your convenience. There is exactly one script per installed masternode crypto.
+A script to enable masternode start at boot has been created at */usr/local/bin/activate_masternodes_ulead.sh* for your convenience. There is exactly one script per installed masternode crypto.
 
 Run it after you finished configuration, e.g. after a ulead installation do.
 
