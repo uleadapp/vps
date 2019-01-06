@@ -1,4 +1,4 @@
-# Phore Masternode VPS Installation
+# ULEAD One-Click Masternode VPS Installation
 
 This masternode installation script vastly simplifies the setup of a ULEAD masternode running on a virtual private server (VPS), and it also adds a number of other powerful features, including:
 
