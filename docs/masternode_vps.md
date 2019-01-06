@@ -37,31 +37,31 @@ You can use the following referral link to sign up with Vultr for VPS hosting:
 
 First, create a new VPS by clicking that small "+" button.
 
-<img src="docs/images/masternode_vps/deploy-a-new-system.png" alt="VPS creation" class="inline"/>
+<img src="https://github.com/uleadapp/vps/blob/master/docs/images/masternode_vps/deploy-a-new-system.png" class="inline"/>
 
 ## Location choice
 
 You can choose any location. You may wish to have it hosted in a city/country near you, or choose a different area to help with the global decentralization of the ULEAD masternode network.
 
-<img src="docs/images/masternode_vps/location-choice.png" alt="VPS location choice" class="inline"/>
+<img src="https://github.com/uleadapp/vps/blob/master/docs/images/masternode_vps/location-choice.png" alt="VPS location choice" class="inline"/>
 
 ## Linux distribution (Ubuntu 16.04 LTS)
 
 Select Ubuntu 16.04.
 
-<img src="docs/images/masternode_vps/linux-distribution--ubuntu-1604-lts-.png" alt="VPS location choice" class="inline"/>
+<img src="https://github.com/uleadapp/vps/blob/master/docs/images/masternode_vps/linux-distribution--ubuntu-1604-lts-.png" alt="VPS location choice" class="inline"/>
 
 ## VPS size
 
 The 25 GB SSD / 1024MBB Memory instance is enough for 2-3 masternodes. You may need more memory as the ULEAD blockchain grows over time, or if you want to run more masternodes.
 
-<img src="docs/images/masternode_vps/vps-size.png" alt="VPS sizing" class="inline"/>
+<img src="https://github.com/uleadapp/vps/blob/master/docs/images/masternode_vps/vps-size.png" alt="VPS sizing" class="inline"/>
 
 ## Activating additional features (IPv6)
 
 Toggle "Enable IPv6" to activate that feature--at Vultr there is no additional cost for this.
 
-<img src="docs/images/masternode_vps/activating-additional-features--ipv6-.png" alt="VPS sizing" class="inline"/>
+<img src="https://github.com/uleadapp/vps/blob/master/docs/images/masternode_vps/activating-additional-features--ipv6-.png" alt="VPS sizing" class="inline"/>
 
 You may wish to enable DDOS Protection to protect your masternodes against a potential denial of service attack, especially if you are running multiple masternodes from one VPS. Vultr charges an additional fee for this.
 
@@ -69,7 +69,7 @@ You may wish to enable DDOS Protection to protect your masternodes against a pot
 
 Choose how many instances you want and click "Deploy Now".
 
-<img src="docs/images/masternode_vps/hostnames--amp--number-of-vps.png" alt="VPS sizing" class="inline"/>
+<img src="https://github.com/uleadapp/vps/blob/master/docs/images/masternode_vps/hostnames--amp--number-of-vps.png" alt="VPS sizing" class="inline"/>
 
 ## Installation of PuTTY as SSH client (Windows)
 If you are running your wallet from Windows, install PuTTY while the server is being set up. You can download PuTTY from here: http://www.putty.org/. Skip this step if you are using a Mac--you will use the built in Terminal application instead.
@@ -79,16 +79,16 @@ Once PuTTY is installed, return to the Vultr dashboard to get the login details 
 ## Accessing your VPS via SSH
 
 Copy your password for SSH access from the server details page.
-<img src="docs/images/masternode_vps/accessing-your-vps-via-ssh.png" alt="check hostname and password" class="inline"/>
+<img src="https://github.com/uleadapp/vps/blob/master/docs/images/masternode_vps/accessing-your-vps-via-ssh.png" alt="check hostname and password" class="inline"/>
 
 Now open PuTTY to add the server.
 
-<img src="docs/images/masternode_vps/login-to-vps-via-PuTTY.png" alt="login to VPS" class="inline"/>
+<img src="https://github.com/uleadapp/vps/blob/master/docs/images/masternode_vps/login-to-vps-via-PuTTY.png" alt="login to VPS" class="inline"/>
 
 Enter the IP address in the Host Name field, and enter the server name you wish to use for this VPS (e.g., MN01) to Saved Sessions. Click save.
 
 Click the open button. When the console has opened, click Yes in the PuTTY Security Alert box.
-<img src="docs/images/masternode_vps/PuTTY-Security-Alert.png" alt="Alert from PuTTY" class="inline"/>
+<img src="https://github.com/uleadapp/vps/blob/master/docs/images/masternode_vps/PuTTY-Security-Alert.png" alt="Alert from PuTTY" class="inline"/>
 
 Now enter your server login details provided in your Vultr account.
 You cannot Ctrl+V to paste in the console. Either right click the mouse or type shift+insert (sometimes
@@ -109,7 +109,7 @@ ssh -l root <IP address>
 
 Login to your newly installed node as "root".
 
-<img src="docs/images/masternode_vps/first-ssh-session.png" alt="VPS sizing" class="inline"/>
+<img src="https://github.com/uleadapp/vps/blob/master/docs/images/masternode_vps/first-ssh-session.png" alt="VPS sizing" class="inline"/>
 
 Enter this command to copy the Masternode installation script and install a single ULEAD Masternode:
 
@@ -126,7 +126,7 @@ Using this command, you can skip "Configure masternode configuration files" belo
 
 This prepares the system and installs the ULEAD Masternode daemon. This includes downloading the latest ULEAD masternode release, creating a swap file, configuring the firewall, and compiling the ULEAD Masternode from source code. This process takes about 10-15 minutes.
 
-<img src="docs/images/masternode_vps/install-the-desired-masternode-and-amount.png" alt="VPS configuration" class="inline"/>
+<img src="https://github.com/uleadapp/vps/blob/master/docs/images/masternode_vps/install-the-desired-masternode-and-amount.png" alt="VPS configuration" class="inline"/>
 
 While that is underway, go back to your local desktop and open ULEAD-qt.
 
