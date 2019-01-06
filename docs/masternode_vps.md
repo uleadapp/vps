@@ -12,7 +12,7 @@ This project is a handy bash script to setup number of ulead masternodes at a ti
 I will use vultr for my instructions, but in practice and with a bit of tuning any hoster that gives you multiple free IPv6 addresses. Register / login with vultr.
 
 Feel free to use my reflink to signup and receive a bonus w/ vultr:
-<a href="https://www.vultr.com/?ref=6903922"><img src="https://www.vultr.com/media/banner_2.png" width="468" height="60"></a>
+<a href="https://www.vultr.com/?ref=7302091"><img src="https://www.vultr.com/media/banner_2.png" width="468" height="60"></a>
 
 It's also great that you can use Bitcoin to pay!
 
