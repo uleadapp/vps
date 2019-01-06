@@ -1,24 +1,38 @@
-# One lick masternode VPS setup for all our beloved ULEAD community members (Vultr example)
-
-
-## Intro
+# ULEAD One-Click Masternode VPS Installation
 
 This project is a handy bash script to setup number of ulead masternodes at a time just on one VPS of type ipv6. Almost all of the steps are automated and no manual intervention is required during this process. You can use this script to setup either single masternode or multiple master nodes. Based on the 'number' passed as parameter in the initial step of process, master nodes are set up.
 
 <img src="images/masternode_vps/intro.png" alt="introduction" class="inline"/>
 
+This masternode installation script vastly simplifies the setup of a ULEAD masternode running on a virtual private server (VPS), and it also adds a number of other powerful features, including:
+
+* IPv6 Support
+* Installs 1-100 (or more!) ULEAD masternodes in parallel on one VPS, with individual ulead.conf and data directories
+* It can install masternodes for other coins on the same VPS as ULEAD
+* 100% auto-compilation and 99% of configuration on the masternode side of things
+* Automatically compiling from the latest ULEAD release tag, or another tag can be specified
+* Automatic startup for all masternode daemons
+
+Some notes and requirements:
+
+* Script has only been tested on a Vultr VPS, but should work almost anywhere where IPv6 addresses are available
+* Currently only Ubunto 16.04 Linux is supported
+* This script needs to run as root or with sudo, the masternodes will and should not!
+
+## How to get VPS server
+
+For new masternode owners, **Vultr** is recommended as a VPS hosting provider, but other providers that allow direct root SSH login access and offer Ubunto 16.04 may work.
+
+You can use the following referral link to sign up with Vultr for VPS hosting:
+
+<a href="https://www.vultr.com/?ref=7302091"><img src="https://www.vultr.com/media/banner_2.png" width="468" height="60"></a>
+
 ## Get a VPS system for your masternode(s)
 
 I will use vultr for my instructions, but in practice and with a bit of tuning any hoster that gives you multiple free IPv6 addresses. Register / login with vultr.
 
-Feel free to use my reflink to signup and receive a bonus w/ vultr:
+Feel free to use our reflink to signup and receive a bonus w/ vultr:
 <a href="https://www.vultr.com/?ref=7302091"><img src="https://www.vultr.com/media/banner_2.png" width="468" height="60"></a>
-
-It's also great that you can use Bitcoin to pay!
-
-<img src="images/masternode_vps/get-a-vps-system-for-your-masternode-s-.png" alt="VPS signup" class="inline"/>
-
-## Deploy a new system
 
 First, create a new VPS by clicking that small "+" button.
 
@@ -179,9 +193,15 @@ If you want to check the status of your masternode, the best way is currently ru
 }
 ```
 
+This project was forked from Phore project. Phore was forked from https://github.com/masternodes/vps. @marsmensch (Florian) is the primary author behind this VPS installation script for masternodes. If you would like to donate to him, you can use the BTC address below
 
+**Have fun, this is crypto after all!**
+
+```
+BTC  33ENWZ9RCYBG7nv6ac8KxBUSuQX64Hx3x3
+```
 # Issues and Questions
-
-Please open github issue in case of questions or issues. I might not be able to reply immediately, but i do usually within a couple of days at worst.
+Please join our Discord channel for any queries:
+https://discord.gg/drPE7v
 
 **Have fun, ULEADer!**
